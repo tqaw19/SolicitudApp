@@ -32,6 +32,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //Esto elimina el toolbar de la app
+        getSupportActionBar().hide();
+
         solicitudesList = findViewById(R.id.recyclerview);
         solicitudesList.setLayoutManager(new LinearLayoutManager(this));
 

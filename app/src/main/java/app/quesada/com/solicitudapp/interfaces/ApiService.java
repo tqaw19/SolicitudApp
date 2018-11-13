@@ -15,7 +15,7 @@ import retrofit2.http.POST;
 import retrofit2.http.Part;
 
 public interface ApiService {
-    String API_BASE_URL = "http://192.168.1.96:8088";
+    String API_BASE_URL = "http://10.200.170.255:8088";
 
     @GET("/solicitudes")
     Call<List<Solicitud>> getSolicitudes();
