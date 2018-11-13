@@ -56,7 +56,7 @@ public class SolicitudesAdapter extends RecyclerView.Adapter<SolicitudesAdapter.
         Solicitud solicitud = this.solicitudes.get(position);
 
         viewHolder.nombreText.setText(solicitud.getTipo());
-        viewHolder.correoText.setText("S/. " + solicitud.getCorreo());
+        viewHolder.correoText.setText(solicitud.getCorreo());
 
         String url = ApiService.API_BASE_URL + "/solicitudes/images/" + solicitud.getCaptura();
         Picasso.with(viewHolder.itemView.getContext()).load(url).into(viewHolder.fotoImage);
